@@ -10,7 +10,7 @@ class GoogleSignInWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed: () {
-        Get.offNamed(RouterHelper.homePage);
+        Get.offNamed(RouterHelper.userHomePage);
       },
       style: Theme.of(context).elevatedButtonTheme.style!.copyWith(
             backgroundColor: MaterialStateProperty.all(

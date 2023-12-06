@@ -16,7 +16,7 @@ class CreatePageWidget extends StatefulWidget {
     required this.page,
     this.appBarTitle,
     this.floatingActionButton,
-    this.floatingActionButtonLocation,
+    this.floatingActionButtonLocation = FloatingActionButtonLocation.endFloat,
     this.bottomNavigationBar,
   }) : super(key: key);
 
@@ -36,8 +36,7 @@ class _CreatePageWidgetState extends State<CreatePageWidget> {
               backgroundColor: Theme.of(context).primaryColor,
             )
           : null,
-      floatingActionButtonLocation: widget.floatingActionButtonLocation ??
-          FloatingActionButtonLocation.centerDocked,
+      floatingActionButtonLocation: widget.floatingActionButtonLocation,
       floatingActionButton: widget.floatingActionButton,
       body: SafeArea(
         child: Stack(
