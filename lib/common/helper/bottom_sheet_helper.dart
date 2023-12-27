@@ -6,12 +6,11 @@ class BottomSheetHelper {
     BuildContext context, {
     Widget child = const SizedBox(),
     String? title,
-    double height = (1 / 2),
+    double? height,
   }) {
     showModalBottomSheet(
       context: context,
-      isScrollControlled: true,
-      useSafeArea: true,
+      isScrollControlled: height != null ? true : false,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(30.0),
@@ -29,7 +28,7 @@ class BottomSheetHelper {
                 topRight: Radius.circular(30.0),
               ),
             ),
-            height: Get.height * (height),
+            height: height != null ? Get.height * (height) : null,
             width: double.infinity,
             child: Column(children: [
               Container(

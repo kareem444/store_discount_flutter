@@ -11,7 +11,6 @@ class DiscountItemFeature extends StatelessWidget {
       BottomSheetHelper.show(
         context,
         title: "Request Details",
-        height: 3 / 4,
         child: const RequestDetailsBottomSheetWidget(),
       );
     }

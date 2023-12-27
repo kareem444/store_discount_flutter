@@ -47,7 +47,7 @@ class SignUpFeature extends StatelessWidget {
             ),
             const SizedBox(height: 15),
             ElevatedButton(
-              onPressed: () => Get.offAllNamed(RouterHelper.userHomePage),
+              onPressed: () => Get.offAllNamed(RouterHelper.storeDiscountRequestsPage),
               child: const Text('Sign Up'),
             ),
             const SizedBox(height: 15),

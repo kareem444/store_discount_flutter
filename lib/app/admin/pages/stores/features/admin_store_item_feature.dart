@@ -11,7 +11,7 @@ class AdminStoreItemFeature extends StatelessWidget {
     void handelOnEditButtonTap() {
       BottomSheetHelper.show(
         context,
-        title: "Edit Category",
+        title: "Edit Store",
         height: 9 / 10,
         child: const AdminEditStoreFeature(),
       );

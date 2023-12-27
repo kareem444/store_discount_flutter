@@ -18,8 +18,8 @@ class _MainSplashPageState extends State<MainSplashPage> {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((timeStamp) async {
       await Future.delayed(const Duration(seconds: 2));
-      // Get.offNamed(RouterHelper.signInPage);
-      Get.offNamed(RouterHelper.adminCategoriesPage);
+      Get.offNamed(RouterHelper.signInPage);
+      // Get.offNamed(RouterHelper.adminCategoriesPage);
     });
   }
 
